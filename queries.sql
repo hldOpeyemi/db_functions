@@ -32,3 +32,13 @@ inner join for_sale_cars fsc
 on d.id = fsc.dealership_id
 where fsc.`year` > 2020
 order by fsc.`year` asc;
+
+select COUNT(fsc.`year`) 
+from for_sale_cars fsc  
+where fsc.`year` > 2019;
+
+select COUNT(fsc.id) 
+from dealership d 
+inner join for_sale_cars fsc 
+on d.id = fsc.dealership_id
+where d.id = 1;
